@@ -1,6 +1,4 @@
 <?php
-header('Content-Type: application/json');
-
 // Set the timezone to Asia/Kolkata
 date_default_timezone_set('Asia/Kolkata');
 
@@ -9,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $filePath = __DIR__ . '/app/med_schedule.json';
 
     if (!file_exists($filePath)) {
-        echo json_encode(["error" => "Medicine schedule file not found."]);
+        echo "<h1>Error: Medicine schedule file not found.</h1>";
         http_response_code(404);
         exit;
     }
@@ -18,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $schedule = json_decode($jsonData, true);
 
     if (json_last_error() !== JSON_ERROR_NONE) {
-        echo json_encode(["error" => "Invalid JSON format in medicine schedule file."]);
+        echo "<h1>Error: Invalid JSON format in medicine schedule file.</h1>";
         http_response_code(500);
         exit;
     }
@@ -27,15 +25,53 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $allMedicines = [];
         foreach ($schedule[$day] as $time => $medicines) {
             $medicinesList = implode(", ", $medicines); // Convert the medicines array to a string
-            $allMedicines[] = "- $time is $medicinesList.";
+            $allMedicines[] = "<li><strong>$time:</strong> $medicinesList</li>";
         }
-        $message = "Your medicine for $day:\n" . implode("\n", $allMedicines);
-        echo json_encode(["message" => $message]);
+        $message = "<h1>Your medicine schedule for $day:</h1><ul>" . implode("", $allMedicines) . "</ul>";
     } else {
-        echo json_encode(["message" => "No medicines scheduled for $day."]);
+        $message = "<h1>No medicines scheduled for $day.</h1>";
     }
+
+    // Output the HTML
+    echo <<<HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+        }
+        strong {
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    $message
+</body>
+</html>
+HTML;
 } else {
-    echo json_encode(["error" => "Invalid request."]);
+    echo "<h1>Error: Invalid request.</h1>";
     http_response_code(400);
 }
-?>
