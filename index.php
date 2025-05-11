@@ -1,8 +1,11 @@
 <?php
 header('Content-Type: application/json');
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['day'])) {
-    $day = ucfirst(strtolower($_GET['day'])); // Capitalize the first letter of the day
+// Set the timezone to Asia/Kolkata
+date_default_timezone_set('Asia/Kolkata');
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $day = ucfirst(strtolower(date('l'))); // Get the current day based on the server's timezone
     $filePath = __DIR__ . '/app/med_schedule.json';
 
     if (!file_exists($filePath)) {
@@ -32,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['day'])) {
         echo json_encode(["message" => "No medicines scheduled for $day."]);
     }
 } else {
-    echo json_encode(["error" => "Invalid request. Please provide the 'day' parameter."]);
+    echo json_encode(["error" => "Invalid request."]);
     http_response_code(400);
 }
 ?>
