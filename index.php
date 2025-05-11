@@ -24,9 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['day'])) {
         $allMedicines = [];
         foreach ($schedule[$day] as $time => $medicines) {
             $medicinesList = implode(", ", $medicines); // Convert the medicines array to a string
-            $allMedicines[] = "$time: $medicinesList";
+            $allMedicines[] = "- $time is $medicinesList.";
         }
-        $message = "Your medicines for $day are " . implode("; ", $allMedicines) . ".";
+        $message = "Your medicine for $day:\n" . implode("\n", $allMedicines);
         echo json_encode(["message" => $message]);
     } else {
         echo json_encode(["message" => "No medicines scheduled for $day."]);
