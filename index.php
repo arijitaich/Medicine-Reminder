@@ -1,8 +1,9 @@
 <?php
 header('Content-Type: application/json');
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['day'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['day']) && isset($_GET['time'])) {
     $day = ucfirst(strtolower($_GET['day'])); // Capitalize the first letter of the day
+    $time = ucwords(strtolower($_GET['time'])); // Capitalize the first letter of each word in time
     $filePath = __DIR__ . '/app/med_schedule.json';
 
     if (!file_exists($filePath)) {
@@ -20,16 +21,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['day'])) {
         exit;
     }
 
-    if (isset($schedule[$day])) {
-        echo json_encode([
-            "day" => $day,
-            "schedule" => $schedule[$day]
-        ]);
+    if (isset($schedule[$day][$time])) {
+        $medicines = implode(", ", $schedule[$day][$time]); // Convert the medicines array to a string
+        $message = "Your medicine for $day $time is $medicines";
+        echo json_encode(["message" => $message]);
     } else {
-        echo json_encode(["message" => "No medicines scheduled for $day."]);
+        echo json_encode(["message" => "No medicines scheduled for $day at $time."]);
     }
 } else {
-    echo json_encode(["error" => "Invalid request. Please provide the 'day' parameter."]);
+    echo json_encode(["error" => "Invalid request. Please provide both 'day' and 'time' parameters."]);
     http_response_code(400);
 }
 ?>
