@@ -21,12 +21,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['day'])) {
     }
 
     if (isset($schedule[$day])) {
-        $messages = [];
+        $allMedicines = [];
         foreach ($schedule[$day] as $time => $medicines) {
             $medicinesList = implode(", ", $medicines); // Convert the medicines array to a string
-            $messages[] = "Your medicine for $day $time is $medicinesList";
+            $allMedicines[] = "$time: $medicinesList";
         }
-        echo json_encode(["messages" => $messages]);
+        $message = "Your medicines for $day are " . implode("; ", $allMedicines) . ".";
+        echo json_encode(["message" => $message]);
     } else {
         echo json_encode(["message" => "No medicines scheduled for $day."]);
     }
