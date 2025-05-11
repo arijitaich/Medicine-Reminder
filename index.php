@@ -2,8 +2,8 @@
 header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['day']) && isset($_GET['time'])) {
-    $day = strtolower($_GET['day']);
-    $time = strtolower($_GET['time']);
+    $day = ucfirst(strtolower($_GET['day'])); // Capitalize the first letter of the day
+    $time = ucwords(strtolower($_GET['time'])); // Capitalize the first letter of each word in time
     $filePath = __DIR__ . '/app/med_schedule.json';
 
     if (!file_exists($filePath)) {
@@ -23,8 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['day']) && isset($_GET['
 
     if (isset($schedule[$day][$time])) {
         echo json_encode([
-            "day" => ucfirst($day),
-            "time" => ucfirst($time),
+            "day" => $day,
+            "time" => $time,
             "medicines" => $schedule[$day][$time]
         ]);
     } else {
