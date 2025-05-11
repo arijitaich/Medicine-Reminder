@@ -24,4 +24,4 @@ def get_meds():
         return jsonify({"message": f"No medicines scheduled for {day} {time_slot}."}), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5500)  # Updated to run on 0.0.0.0:5500
