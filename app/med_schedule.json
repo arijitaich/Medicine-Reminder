@@ -1,0 +1,228 @@
+{
+    "Monday": {
+        "Before Breakfast": [
+            "FAMOCID 40 mg"
+        ],
+        "After Breakfast": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "NEXOVAS 10 mg",
+            "CALPOL T",
+            "UPRISE D3 60K"
+        ],
+        "After Lunch": [
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "FERONIA XT",
+            "SHELCAL OS"
+        ],
+        "Evening": [
+            "PYRIGESIC 650 mg"
+        ],
+        "After Dinner": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "CALPOL T",
+            "ZYLORIC 100 mg"
+        ],
+        "Bedtime": [
+            "DUPHALAC",
+            "PREGABA M"
+        ]
+    },
+    "Tuesday": {
+        "Before Breakfast": [
+            "FAMOCID 40 mg"
+        ],
+        "After Breakfast": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "NEXOVAS 10 mg",
+            "CALPOL T"
+        ],
+        "After Lunch": [
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "FERONIA XT",
+            "SHELCAL OS"
+        ],
+        "Evening": [
+            "PYRIGESIC 650 mg"
+        ],
+        "After Dinner": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "CALPOL T",
+            "ZYLORIC 100 mg"
+        ],
+        "Bedtime": [
+            "DUPHALAC",
+            "PREGABA M"
+        ]
+    },
+    "Wednesday": {
+        "Before Breakfast": [
+            "FAMOCID 40 mg"
+        ],
+        "After Breakfast": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "NEXOVAS 10 mg",
+            "CALPOL T"
+        ],
+        "After Lunch": [
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "FERONIA XT",
+            "SHELCAL OS"
+        ],
+        "Evening": [
+            "PYRIGESIC 650 mg"
+        ],
+        "After Dinner": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "CALPOL T",
+            "ZYLORIC 100 mg"
+        ],
+        "Bedtime": [
+            "DUPHALAC",
+            "PREGABA M"
+        ]
+    },
+    "Thursday": {
+        "Before Breakfast": [
+            "FAMOCID 40 mg"
+        ],
+        "After Breakfast": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "NEXOVAS 10 mg",
+            "CALPOL T"
+        ],
+        "After Lunch": [
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "FERONIA XT",
+            "SHELCAL OS"
+        ],
+        "Evening": [
+            "PYRIGESIC 650 mg"
+        ],
+        "After Dinner": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "CALPOL T",
+            "ZYLORIC 100 mg"
+        ],
+        "Bedtime": [
+            "DUPHALAC",
+            "PREGABA M"
+        ]
+    },
+    "Friday": {
+        "Before Breakfast": [
+            "FAMOCID 40 mg"
+        ],
+        "After Breakfast": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "NEXOVAS 10 mg",
+            "CALPOL T"
+        ],
+        "After Lunch": [
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "FERONIA XT",
+            "SHELCAL OS"
+        ],
+        "Evening": [
+            "PYRIGESIC 650 mg"
+        ],
+        "After Dinner": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "CALPOL T",
+            "ZYLORIC 100 mg"
+        ],
+        "Bedtime": [
+            "DUPHALAC",
+            "PREGABA M"
+        ]
+    },
+    "Saturday": {
+        "Before Breakfast": [
+            "FAMOCID 40 mg"
+        ],
+        "After Breakfast": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "NEXOVAS 10 mg",
+            "CALPOL T"
+        ],
+        "After Lunch": [
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "FERONIA XT",
+            "SHELCAL OS",
+            "DARBITOP 40 mcg"
+        ],
+        "Evening": [
+            "PYRIGESIC 650 mg"
+        ],
+        "After Dinner": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "CALPOL T",
+            "ZYLORIC 100 mg"
+        ],
+        "Bedtime": [
+            "DUPHALAC",
+            "PREGABA M"
+        ]
+    },
+    "Sunday": {
+        "Before Breakfast": [
+            "FAMOCID 40 mg"
+        ],
+        "After Breakfast": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "NEXOVAS 10 mg",
+            "CALPOL T"
+        ],
+        "After Lunch": [
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "FERONIA XT",
+            "SHELCAL OS"
+        ],
+        "Evening": [
+            "PYRIGESIC 650 mg"
+        ],
+        "After Dinner": [
+            "ZOCEF 500 mg",
+            "PYRIGESIC 650 mg",
+            "PHLOGAM",
+            "CALPOL T",
+            "ZYLORIC 100 mg"
+        ],
+        "Bedtime": [
+            "DUPHALAC",
+            "PREGABA M"
+        ]
+    }
+}
