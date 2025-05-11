@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from datetime import datetime
-from schedule_loader import get_medicines
+from app.schedule_loader import get_medicines  # Adjusted import path
 
 app = Flask(__name__)
 
