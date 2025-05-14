@@ -4,7 +4,7 @@
             "FAMOCID 40 mg"
         ],
         "After Breakfast": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "NEXOVAS 10 mg",
@@ -12,6 +12,7 @@
             "UPRISE D3 60K"
         ],
         "After Lunch": [
+            "STARIO",
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "FERONIA XT",
@@ -21,7 +22,7 @@
             "PYRIGESIC 650 mg"
         ],
         "After Dinner": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "CALPOL T",
@@ -37,13 +38,14 @@
             "FAMOCID 40 mg"
         ],
         "After Breakfast": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "NEXOVAS 10 mg",
             "CALPOL T"
         ],
         "After Lunch": [
+            "STARIO",
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "FERONIA XT",
@@ -53,7 +55,7 @@
             "PYRIGESIC 650 mg"
         ],
         "After Dinner": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "CALPOL T",
@@ -69,13 +71,14 @@
             "FAMOCID 40 mg"
         ],
         "After Breakfast": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "NEXOVAS 10 mg",
             "CALPOL T"
         ],
         "After Lunch": [
+            "STARIO",
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "FERONIA XT",
@@ -85,7 +88,7 @@
             "PYRIGESIC 650 mg"
         ],
         "After Dinner": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "CALPOL T",
@@ -100,14 +103,14 @@
         "Before Breakfast": [
             "FAMOCID 40 mg"
         ],
-        "After Breakfast": [
-            "ZOCEF 500 mg",
+        "After Breakfast": [            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "NEXOVAS 10 mg",
             "CALPOL T"
         ],
         "After Lunch": [
+            "STARIO",
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "FERONIA XT",
@@ -116,8 +119,7 @@
         "Evening": [
             "PYRIGESIC 650 mg"
         ],
-        "After Dinner": [
-            "ZOCEF 500 mg",
+        "After Dinner": [            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "CALPOL T",
@@ -133,13 +135,14 @@
             "FAMOCID 40 mg"
         ],
         "After Breakfast": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "NEXOVAS 10 mg",
             "CALPOL T"
         ],
         "After Lunch": [
+            "STARIO",
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "FERONIA XT",
@@ -149,7 +152,7 @@
             "PYRIGESIC 650 mg"
         ],
         "After Dinner": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "CALPOL T",
@@ -165,13 +168,14 @@
             "FAMOCID 40 mg"
         ],
         "After Breakfast": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "NEXOVAS 10 mg",
             "CALPOL T"
         ],
         "After Lunch": [
+            "STARIO",
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "FERONIA XT",
@@ -182,7 +186,7 @@
             "PYRIGESIC 650 mg"
         ],
         "After Dinner": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "CALPOL T",
@@ -198,13 +202,14 @@
             "FAMOCID 40 mg"
         ],
         "After Breakfast": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "NEXOVAS 10 mg",
             "CALPOL T"
         ],
         "After Lunch": [
+            "STARIO",
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "FERONIA XT",
@@ -214,7 +219,7 @@
             "PYRIGESIC 650 mg"
         ],
         "After Dinner": [
-            "ZOCEF 500 mg",
+            
             "PYRIGESIC 650 mg",
             "PHLOGAM",
             "CALPOL T",
